@@ -3,12 +3,25 @@ var DnaTranscriber = function () {
 };
 
 DnaTranscriber.prototype.toRna = function (inputString) {
-  var newString = inputString.replace('A','U');
-  newString = newString.replace(/G/g,'C');
-  newString = newString.replace('T','A');
-  newString = newString.replace(/C/g,'G');
+  var arr = inputString.split("");
+  var i = 0;
 
-  return newString;
+  while (i < arr.length){
+    if (arr[i] == 'A') {
+      arr[i] = 'U';
+    } else if (arr[i] == 'C') {
+      arr[i] = 'G';
+    } else if (arr[i] == 'T') {
+      arr[i] = 'A';
+    } else if (arr[i] == 'G') {
+      arr[i] = 'C';
+    } else {
+      throw Error('Invalid input')
+    }
+    i++
+  }
+
+  return arr.join('');
 };
 
 module.exports = DnaTranscriber;
