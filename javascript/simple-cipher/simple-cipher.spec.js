@@ -25,7 +25,7 @@ describe('Random key cipher', function () {
 });
 
 describe('Incorrect key cipher', function () {
-  xit('throws an error with an all caps key', function () {
+  it('throws an error with an all caps key', function () {
     expect( function () {
       new Cipher('ABCDEF');
     }).toThrow(new Error('Bad key'));
