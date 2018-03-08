@@ -7,4 +7,9 @@ Cipher.prototype.encode = function(key) {
   return key
 };
 
+Cipher.prototype.decode = function(key) {
+  this.key = key.repeat(10)
+  return key
+};
+
 module.exports = Cipher;
