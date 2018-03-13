@@ -9,47 +9,47 @@ class RaindropsTest < Minitest::Test
   end
 
   def test_the_sound_for_3_is_pling
-    skip
+    #skip
     assert_equal "Pling", Raindrops.convert(3)
   end
 
   def test_the_sound_for_5_is_plang
-    skip
+    #skip
     assert_equal "Plang", Raindrops.convert(5)
   end
 
   def test_the_sound_for_7_is_plong
-    skip
+    #skip
     assert_equal "Plong", Raindrops.convert(7)
   end
 
   def test_the_sound_for_6_is_pling_as_it_has_a_factor_3
-    skip
+    #skip
     assert_equal "Pling", Raindrops.convert(6)
   end
 
   def test_2_to_the_power_3_does_not_make_a_raindrop_sound_as_3_is_the_exponent_not_the_base
-    skip
+    #skip
     assert_equal "8", Raindrops.convert(8)
   end
 
   def test_the_sound_for_9_is_pling_as_it_has_a_factor_3
-    skip
+    #skip
     assert_equal "Pling", Raindrops.convert(9)
   end
 
   def test_the_sound_for_10_is_plang_as_it_has_a_factor_5
-    skip
+    #skip
     assert_equal "Plang", Raindrops.convert(10)
   end
 
   def test_the_sound_for_14_is_plong_as_it_has_a_factor_of_7
-    skip
+    #skip
     assert_equal "Plong", Raindrops.convert(14)
   end
 
   def test_the_sound_for_15_is_plingplang_as_it_has_factors_3_and_5
-    skip
+    #skip
     assert_equal "PlingPlang", Raindrops.convert(15)
   end
 
