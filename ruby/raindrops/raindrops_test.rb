@@ -54,42 +54,42 @@ class RaindropsTest < Minitest::Test
   end
 
   def test_the_sound_for_21_is_plingplong_as_it_has_factors_3_and_7
-    skip
+    #skip
     assert_equal "PlingPlong", Raindrops.convert(21)
   end
 
   def test_the_sound_for_25_is_plang_as_it_has_a_factor_5
-    skip
+    #skip
     assert_equal "Plang", Raindrops.convert(25)
   end
 
   def test_the_sound_for_27_is_pling_as_it_has_a_factor_3
-    skip
+    #skip
     assert_equal "Pling", Raindrops.convert(27)
   end
 
   def test_the_sound_for_35_is_plangplong_as_it_has_factors_5_and_7
-    skip
+    #skip
     assert_equal "PlangPlong", Raindrops.convert(35)
   end
 
   def test_the_sound_for_49_is_plong_as_it_has_a_factor_7
-    skip
+    #skip
     assert_equal "Plong", Raindrops.convert(49)
   end
 
   def test_the_sound_for_52_is_52
-    skip
+    #skip
     assert_equal "52", Raindrops.convert(52)
   end
 
   def test_the_sound_for_105_is_plingplangplong_as_it_has_factors_3_5_and_7
-    skip
+    #skip
     assert_equal "PlingPlangPlong", Raindrops.convert(105)
   end
 
   def test_the_sound_for_3125_is_plang_as_it_has_a_factor_5
-    skip
+    #skip
     assert_equal "Plang", Raindrops.convert(3125)
   end
 
@@ -111,7 +111,7 @@ class RaindropsTest < Minitest::Test
   # http://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/constants.html
 
   def test_bookkeeping
-    skip
+    #skip
     assert_equal 3, BookKeeping::VERSION
   end
 end
