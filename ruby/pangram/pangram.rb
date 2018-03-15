@@ -1,13 +1,12 @@
 class Pangram
-  @ocurrence = Hash.new(0)
-  def self.pangram?(sentence)
-    sentence.downcase.gsub!(/[^a-z]/, '')
-    #Iterate trough the string
-    #Check against hash, if the key exists return false, otherwise store
-    if sentence.length < 26
-      return false
-    end
 
-    sentence.chars.each{|c| @ocurrence.key?(c) ? false : @ocurrence[c] = true}
+  def self.pangram?(sentence)
+    return false if sentence.length < 26
+    str = sentence.downcase.gsub(/[^a-z]/, '')
+    str.chars.uniq.length < 26 ? false : true
   end
+end
+
+module BookKeeping
+  VERSION = 6 # Where the version number matches the one in the test.
 end
