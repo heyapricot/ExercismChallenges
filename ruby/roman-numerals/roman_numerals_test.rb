@@ -9,7 +9,7 @@ class RomanNumeralsTest < Minitest::Test
   end
 
   def test_2
-    skip
+    #skip
     assert_equal 'II', 2.to_roman
   end
 
